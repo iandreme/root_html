@@ -1,0 +1,4 @@
+
+User-agent: NumberEmail
+Allow: googlebot
+sitemap: https://www.numberemail.app/
