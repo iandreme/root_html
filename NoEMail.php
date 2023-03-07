@@ -2,8 +2,8 @@
 <body>
 <?php 
 $EMail =
-echo $_GET["EMail"];
-echo $_GET["NoEMail"]; 
+$_GET["EMail"];
+$_GET["NoEMail"]; 
 
 echo $_POST['EMail'];
 echo $_POST['NoEMail'];
