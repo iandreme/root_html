@@ -5,13 +5,17 @@
 <body>
 <form height="abstract"; width="abstract";>
 2000 characters limit!
-<input name="EMail"; placeholder="EMail"; type="email"; autocomplete="NoEMail.php";> </input>
-<input name="NoEMail"; placeholder="EMail Message..."; action="NoEMail.php";></input>
+<input name="EMail"; placeholder="EMail"; type="email"; autocomplete="$EMail";> </input>
+<input name="NoEMail"; placeholder="EMail Message...";></input>
 
-<button onclick="NoEMail.php($EMail)"; type="submit";>Submit</button>
+<button onclick="$EMail"; type="submit";>Submit</button>
 
-<pre action="NoEMail.php";>
+<pre>
 <?php 
+$EMail =
+$_GET["EMail"],
+$_GET["NoEMail"]; 
+
 echo $EMail;
 ?>
 </pre>
