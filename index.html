@@ -8,8 +8,8 @@
 <input name="EMail" placeholder="EMail" type="email" autocomplete="$EMail"> </input>
 <input name="NoEMail" placeholder="EMail Message..."></input>
 
-<button onclick="$EMail" type="submit">Submit</button>
-<print readOnly="true" action="$EMail">
+<a type="submit" value="EMail">
+<print readOnly="true">
 <?php 
 $EMail =
 ["EMail"],
@@ -18,6 +18,7 @@ $EMail =
 echo $EMail;
 ?>
 </print>
+</a>
 </form>
 
 </body>
