@@ -1,6 +1,6 @@
 <html>
 <body>
-<?php echo $_POST["EMail"];
-echo $_POST["NoEMail"]; ?>
+<?php echo $_GET["EMail"];
+echo $_GET["NoEMail"]; ?>
 </body>
 </html>
