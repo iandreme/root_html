@@ -8,13 +8,13 @@
 <input name="EMail" placeholder="EMail" type="email" autocomplete="$EMail"> </input>
 <input name="NoEMail" placeholder="EMail Message..." action="$EMail"></input>
 
-<a type="submit" href="$EMail">
+<a type="submit" href="['EMail']">
 Email!
 </a>
 <?php 
 $EMail =
-["EMail"],
-["NoEMail"]; 
+['EMail'],
+['NoEMail']; 
 
 echo $EMail;
 ?>
