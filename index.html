@@ -8,12 +8,11 @@
 
 <form height="abstract" width="abstract">
 2000 characters limit!
-<input id="EMail" placeholder="EMail" type="email" autocomplete='$EMail'> </input>
+<input id="EMail" placeholder="EMail" type="email" autocomplete="('$EMail')"> </input>
 <input id="NoEMail" placeholder="EMail Message..."></input>
 
 
 <?php 
-->Load('index.hmtl');
 $EMail =
 ->getElementById('EMail');
 $NoEMail =
@@ -28,13 +27,13 @@ echo "'$NoEMail'";
 
 
 
-<button type="submit" onclick='$EMail','$NoEMail'>
+<button type="submit">
 Email!
 </button>
 
 <p>
 <script>
-documdocumentent.getElementById('EMail','NoEMail').innerHTML = "'$EMail'","'$NoEMail'";
+documdocumentent.getElementById('EMail','NoEMail').innerHTML = "('$EMail')","('$NoEMail')";
 </script>
 </p>
 
