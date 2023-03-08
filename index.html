@@ -8,8 +8,8 @@
 
 <form height="abstract" width="abstract">
 2000 characters limit!
-<input name="EMail" placeholder="EMail" type="email" autocomplete='$EMail'> </input>
-<input name="NoEMail" placeholder="EMail Message..."></input>
+<input id="EMail" placeholder="EMail" type="email" autocomplete='$EMail'> </input>
+<input id="NoEMail" placeholder="EMail Message..."></input>
 
 
 
@@ -28,9 +28,9 @@ echo ['$NoEMail'];
 <button type="submit" onclick='$EMail','$NoEMail'>
 Email!
 </button>
-<p value="'$EMail'","'$NoEMail'">
+<p>
 <script>
-document.getElementByName('EMail','NoEMail').innerHTML = "'$EMail'","'$NoEMail'";
+document.getElementById('EMail','NoEMail').innerHTML = "'$EMail'","'$NoEMail'";
 </script>
 </p>
 
