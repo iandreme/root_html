@@ -40,6 +40,8 @@
   data-design="modern"
   data-coin-ids="1,166,29,2,238,379">
 </div>
+<div id="Today">
+<script>
 <php?
 var $ISP = $_SERVER['192.168.0.1'];
 var $IP = $_GET['213.48.4.42'];
@@ -48,13 +50,15 @@ var $ISP = $GET['192.168.0.1'];
 var $Today = new Date().ToLocalTimeString();
 document.getElementById("Today").innerHTML = $Today;
 ?>
-<time id="Today" datetime="+00:00">
+<time datetime="+00:00">
 <php?
 $Today->validateOnParse = true;
 $Today->Load('index.html');
 echo "" . $Today->getElementById("Today").innerHTML += 'Today' . "";
 ?>
 </time>
+</script>
+</div>
 </form>
 
 </body>
