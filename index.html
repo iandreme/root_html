@@ -49,14 +49,14 @@ var $ISP = $GET['192.168.0.1'];
 var $Today = new Date().ToLocalTimeString();
 document.getElementById("Today").innerHTML = $Today;
 ?>
-<div id="Today" autocorrect="$Today" value=""" . $Today . """>
+<input id="Today" autocorrect="$Today" value=""" . $Today . """>
 <php?
 $Today->validateOnParse = true;
 $Today->Load('index.html','robots.txt);
 echo $Today->getElementById("Today").innerHTML += 'Today';
 ?>
 </script>
-</div>
+</input>
 </form>
 
 </body>
