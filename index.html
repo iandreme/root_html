@@ -49,12 +49,10 @@ var $Today = Date().ToLocalTimeString();
 document.getElementById("Today").innerHTML = $Today;
 ?>
 <time id="Today" datetime="+00:00">
-<div id="Today">
 <php?
-    echo
-document.getElementById("Today").innerHTML += 'Today';
+echo
+$Today->getElementById("Today").innerHTML += 'Today';
 ?>
-</div>
 </time>
 </form>
 
