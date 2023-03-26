@@ -40,7 +40,7 @@
   data-design="modern"
   data-coin-ids="1,166,29,2,238,379">
 </div>
-<input id="Today" autocorrect="$Today" value=""" . $Today . """>
+<input id="Today" width="100%" height="100%" autocomplete="$Today" autocorrect="$Today" value=""" . $Today . """>
 <script>
 <php?
 var $ISP = $_SERVER['192.168.0.1'];
@@ -50,9 +50,11 @@ var $ISP = $GET['192.168.0.1'];
 var $Today = new Date().ToLocalTimeString();
 $Today->validateOnParse = true;
 $Today->Load('index.html','robots.txt);
-echo $Today->getElementById('Today').innerHTML += '$Today';
+$Today->getElementById('Today').innerHTML += 'Today';
 ?>
 </script>
+<button action="$Today" type="submit" value="Today">
+</button>
 </input>
 </form>
 
