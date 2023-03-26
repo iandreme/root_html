@@ -50,13 +50,11 @@ var $ISP = $GET['192.168.0.1'];
 var $Today = new Date().ToLocalTimeString();
 document.getElementById("Today").innerHTML = $Today;
 ?>
-<time datetime="+00:00">
 <php?
 $Today->validateOnParse = true;
 $Today->Load('index.html');
 echo "" . $Today->getElementById("Today").innerHTML += 'Today' . "";
 ?>
-</time>
 </script>
 </div>
 </form>
