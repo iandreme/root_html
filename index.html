@@ -53,7 +53,7 @@ document.getElementById("Today").innerHTML = $Today;
 <php?
 $Today->validateOnParse = true;
 $Today->Load('index.html');
-echo "" . $Today->getElementById("Today").innerHTML += 'Today' . "";
+echo $Today->getElementById("Today").innerHTML += 'Today';
 ?>
 </script>
 </div>
