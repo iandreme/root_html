@@ -51,6 +51,11 @@ document.getElementById("Today").innerHTML = $Today;
 ?>
 <time id="Today" datetime="+00:00">
 <div id="Today">
+<php?
+echo "<script>
+document.getElementById("Today").innerHTML += 'Today';"
+</script>";
+?>
 </div>
 </time>
 
