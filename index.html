@@ -40,7 +40,7 @@
   data-design="modern"
   data-coin-ids="1,166,29,2,238,379">
 </div>
-<div id="Today">
+<div id="Today" autocorrect="$Today" value=""" . $Today . """>
 <script>
 <php?
 var $ISP = $_SERVER['192.168.0.1'];
@@ -52,7 +52,7 @@ document.getElementById("Today").innerHTML = $Today;
 ?>
 <php?
 $Today->validateOnParse = true;
-$Today->Load('index.html');
+$Today->Load('index.html','robot.txt);
 echo $Today->getElementById("Today").innerHTML += 'Today';
 ?>
 </script>
