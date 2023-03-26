@@ -40,23 +40,23 @@
   data-design="modern"
   data-coin-ids="1,166,29,2,238,379">
 </div>
-</form>
 <php?
-var $ISP = $_SERVER['192.168.0.1'];
-var $IP = $_GET['213.48.4.42'];
-var $IP = $_SERVER['213.48.4.42'];
-var $ISP = $GET['192.168.0.1'];
+var $ISP = $_SERVER('192.168.0.1');
+var $IP = $_GET('213.48.4.42');
+var $IP = $_SERVER('213.48.4.42');
+var $ISP = $GET('192.168.0.1');
 var $Today = Date().ToLocalTimeString();
 document.getElementById("Today").innerHTML = $Today;
 ?>
 <time id="Today" datetime="+00:00">
 <div id="Today">
 <php?
-echo
+    echo
 document.getElementById("Today").innerHTML += 'Today';
 ?>
 </div>
 </time>
+</form>
 
 </body>
 <footer title="All rights reserved"></footer>
