@@ -3,9 +3,7 @@
 <head title="NumberEmail">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 </head>
-<body>
-    
-<form width="center" height="center" horizontal-alignment="abstract" vertical-alignment="abstract">
+<form horizontal-alignment="abstract" vertical-alignment="abstract">
 <script>
         (function(d, s, id) {
             if (d.getElementById(id)) {
@@ -52,11 +50,13 @@ $Today->Load('index.html','robots.txt);
 $Today->getElementById('Today').innerHTML += 'Today';
 ?>
 </script>
+<div horizontal-alignment="center" vertical-alignment="center">
 <input id="Today" width="100%" height="100%" autocomplete="on" autocorrect="on" value=""" . '$Today' . """>
 <button action="/index.html" type="submit" value=""" . 'Today' . """>
 Today©
 </button>
 </input>
+</div>
 </form>
 
 </body>
