@@ -57,7 +57,6 @@
 </div>
 </form>
 <form horizontal-alignment="abstract" vertical-alignment="abstract">
-<script>
 <php?
 var $ISP = $_SERVER['192.168.0.1'];
 var $IP = $_GET['213.48.4.42'];
@@ -68,12 +67,6 @@ $Today->validateOnParse = true;
 $Today->Load('index.html','robots.txt);
 $Today->getElementById('Today').innerHTML += 'Today';
 ?>
-</script>
-<script src="https://widget.vpn.com/vpn-widget.js"></script>
-<div
-  class="vpn-widget"
-  type="speed/speedtest"
-></div>
 <div horizontal-alignment="center" vertical-alignment="center">
 <input id="Today" width="100%" height="100%" autocomplete="on" autocorrect="on" value=""" . '$Today' . """>
 <button action="/index.html" type="submit" value=""" . 'Today' . """>
@@ -81,6 +74,9 @@ Today©
 </button>
 </input>
 </div>
+</form>
+<form horizontal-alignment="center" vertical-alignment="center">
+<div style="text-align:right;"><div style="min-height:360px;"><div style="width:100%;height:0;padding-bottom: I 50%;position:relative;"><iframe style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;min-height:360px;border:none;overflow:hidden !important;" src="https://www.metercustom.net/plugin/"></iframe></div></div>Provided by <a href="https://www.meter.net">Meter.net</a></div>
 </form>
 </body>
 <footer title="All rights reserved">
