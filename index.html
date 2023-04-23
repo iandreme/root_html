@@ -12,12 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 </head>
 <body>
+<div horizontal-alignment="center" vertical-alignment="center">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="FRWXWTSKFWSKC">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 </form>
+</div>
 <form horizontal-alignment="abstract" vertical-alignment="abstract">
 <script>
         (function(d, s, id) {
@@ -64,7 +66,7 @@ var $IP = $_SERVER['213.48.4.42'];
 var $ISP = $GET['192.168.0.1'];
 var $Today = new Date().ToLocalTimeString();
 ?>
-<div horizontal-alignment="center" vertical-alignment="center">
+<div height="100%" width="100%" horizontal-alignment="center" vertical-alignment="center">
 <input action="/robot.txt" id="Today" width="100%" height="100%" autocomplete="on" autocorrect="on" value=""" . '$Today' . """>
 <button action="/index.html" type="submit" value=""" . 'Today' . """>
 Today©
