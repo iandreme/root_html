@@ -12,28 +12,20 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0"></meta>
 </head>
 <body>
-<h1>Google Maps</h1>
+<h1>NumberEmail</h1>
 
 <div id="googleMap" getElementById="(id)" style="width:100%;height:400px;"></div>
 
 <script>
 function myMap() {
 var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
+  center:new google.maps.LatLng(getElementById(id)),
   zoom:5,
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOGLxTDQ6pDn3TkPm27UhBH3lyqmG3_BE&callback=myMap"></script>
-<div horizontal-alignment="center" vertical-alignment="center">
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="FRWXWTSKFWSKC">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-</form>
-</div>
 <form horizontal-alignment="abstract" vertical-alignment="abstract">
 <script>
         (function(d, s, id) {
@@ -52,7 +44,7 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
         })(document, 'script', 'tomorrow-sdk');
 </script>
         <div class="tomorrow"
-           data-location-id=""
+           data-location-id="id"
            data-language="EN"
            data-unit-system="IMPERIAL"
            data-skin="dark"
@@ -72,6 +64,14 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
   data-coin-ids="1,166,29,2,238,379">
 </div>
 </form>
+<div horizontal-alignment="center" vertical-alignment="center">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="FRWXWTSKFWSKC">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
 <form horizontal-alignment="abstract" vertical-alignment="abstract">
 <php?
 var $ISP = $_SERVER['192.168.0.1'];
