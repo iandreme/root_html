@@ -12,14 +12,28 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0"></meta>
 </head>
 <body>
-<h1>NumberEmail</h1>
-
+<form>
 <div id="googleMap" style="width:100%;height:100%;"></div>
 
 <script>
 function myMap() {
 var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
+  center:new google.maps.LatLng(<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>),
   zoom:5,
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
@@ -82,11 +96,12 @@ var $Today = new Date().ToLocalTimeString();
 ?>
 <div height="100%" width="100%" horizontal-alignment="center" vertical-alignment="center">
 <input action="/robot.txt" id="Today" width="100%" height="100%" autocomplete="on" autocorrect="on" value=""" . '$Today' . """>
-<button action="/index.html" type="submit" value=""" . 'Today' . """>
+<button onclick="getlocation()" action="/index.html" type="submit" value=""" . 'Today' . """>
 Today©
 </button>
 </input>
 </div>
+</form>
 </form>
 </body>
 <footer title="All rights reserved">
