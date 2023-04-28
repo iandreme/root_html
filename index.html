@@ -59,7 +59,7 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
         })(document, 'script', 'tomorrow-sdk');
 </script>
         <div class="tomorrow"
-           data-location-id="demo"
+           data-location-id=""
            data-language="EN"
            data-unit-system="IMPERIAL"
            data-skin="dark"
@@ -97,7 +97,7 @@ var $Today = new Date().ToLocalTimeString();
 ?>
 <div height="100%" width="100%" horizontal-alignment="center" vertical-alignment="center">
 <input action="/robot.txt" id="Today" width="100%" height="100%" autocomplete="on" autocorrect="on" value=""" . '$Today' . """>
-<button onclick="getLocation()" action="/index.html" type="submit" value=""" . 'Today' . """>
+<button onclick="getLocation(demo)" action="/index.html" type="submit" value=""" . 'Today' . """>
 Today©
 </button>
 </input>
