@@ -34,7 +34,7 @@ function showPosition(position) {
 
 function myMap() {
 var mapProp= {
-  center:new google.maps.LatLng(showPosition(x)),
+  center:new google.maps.LatLng(x),
   zoom:5,
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
@@ -59,7 +59,7 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
         })(document, 'script', 'tomorrow-sdk');
 </script>
         <div class="tomorrow"
-           data-location-id=""
+           data-location-id="demo"
            data-language="EN"
            data-unit-system="IMPERIAL"
            data-skin="dark"
