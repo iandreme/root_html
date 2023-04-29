@@ -34,7 +34,7 @@ function showPosition(position) {
 
 function myMap() {
 var mapProp= {
-  center:new google.maps.LatLng(showPosition(position.cords.latitude,position.cords.longitude)),
+  center:new google.maps.LatLng(position.cords.latitude,position.cords.longitude),
   zoom:5,
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
@@ -69,7 +69,7 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
         </div>
 </form>
 <form horizontal-alignment="center" vertical-alignment="center">
-<script pagehide="on" src="https://price-static.crypto.com/latest/public/static/widget/index.js" value="getLocation(x.innerHTML)">
+<script pagehide="on" src="https://price-static.crypto.com/latest/public/static/widget/index.js">
 </script>
 <div
   id="crypto-widget-CoinMarquee"
