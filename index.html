@@ -26,7 +26,7 @@ body {
 }
 </style>
 </head>
-<body style="document.body">
+<body style="element">
 <form id="demo">
   
 <button onclick="myFunction()">Dark mode</button>
@@ -59,7 +59,7 @@ function showPosition(position) {
 
 function myMap() {
 var mapProp= {
-  center:new google.maps.LatLng(x.innerHTML,v.innerHTML),
+  center:new google.maps.LatLng(x.innerHTML(51.508742),v.innerHTML(-0.120850)),
   zoom:5,
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
