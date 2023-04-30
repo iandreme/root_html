@@ -12,14 +12,38 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1760587392539323"
      crossorigin="anonymous"></script>
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0"></meta>
+    <style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
 </head>
 <body>
 <form id="demo">
+  
+  
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
   
   <div id="googleMap" style="width:100%;height:100%;"></div>
   
 <script>
 var x = document.getElementById("demo");
+var v = document.getElementById("demo");
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -30,13 +54,13 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+  x.innerHTML = "Latitude: " + position.coords.latitude;
+  v.innerHTML = "<br>Longitude: " + position.coords.longitude;
 }
 
 function myMap() {
 var mapProp= {
-  center:new getLocaton(x.innerHTML),
+  center:new google.maps.LatLng(x.innerHTML,v.innerHTML),
   zoom:5,
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
@@ -99,7 +123,7 @@ var $Today = new Date().ToLocalTimeString();
 ?>
 <div height="100%" width="100%" horizontal-alignment="center" vertical-alignment="center">
 <input action="/robot.txt" id="Today" width="100%" height="100%" autocomplete="on" autocorrect="on" value=""" . '$Today' . """>
-<button onclick="getLocation(x.innerHTML)" action="/index.html" type="submit" value=""" . 'Today' . """>
+<button onclick="getLocation(x.innerHTML,v.innerHTML)" action="/index.html" type="submit" value=""" . 'Today' . """>
 Today©
 </button>
 </input>
