@@ -15,30 +15,7 @@
 </head>
 <body title="NumberEmail">
 <form>
-  
-  <div id="googleMap" style="width:100%;height:100%;"></div>
-  
-<script>
-var x = document.getElementById("demo");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude; + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-
-function myMap() {
-
-var map = new google.maps.Map(document.getElementById("googleMap"),showPosition(x.innerHTML));
-}
-</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOGLxTDQ6pDn3TkPm27UhBH3lyqmG3_BE&callback=myMap"></script>
 <form horizontal-alignment="center" vertical-alignment="center">
 <script pagehide="on" src="https://price-static.crypto.com/latest/public/static/widget/index.js">
