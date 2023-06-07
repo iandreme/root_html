@@ -9,6 +9,11 @@
 </script>
 <meta name="viewport" content="width:device-width;height:device-height;initial-scale:1.0;">
 </meta>
+<?php
+$doc = new DOMDocument();
+$doc->validate('robots.txt');
+$doc->load('robots.txt');
+?>
 </head>
 <body title="NumberEmail" content="width:device-width;height:device-height;">
 <script pagehide="on" src="https://price-static.crypto.com/latest/public/static/widget/index.js">
@@ -51,11 +56,6 @@ data-skin="dark"
 data-widget-type="upcoming"          
 style="position:abstract;">
 </div>
-<?php
-$doc = new DOMDocument();
-$doc->validate('robots.txt');
-$doc->load('robots.txt');
-?>
 </body>
 <footer title="All rights reserved" value="All rights reserved">
     All rights reserved.
