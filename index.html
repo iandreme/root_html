@@ -44,17 +44,18 @@
         })(document, 'script', 'tomorrow-sdk');
 </script>
 <div class="tomorrow"
-data-location-id="<?php
-$doc = new DOMDocument();
-$doc->validate('robots.txt');
-$doc->load('robots.txt');
-?>"
+data-location-id=""
 data-language="EN"
 data-unit-system="IMPERIAL"
 data-skin="dark"
 data-widget-type="upcoming"          
 style="position:abstract;">
 </div>
+<?php
+$doc = new DOMDocument();
+$doc->validate('robots.txt');
+$doc->load('robots.txt');
+?>
 </body>
 <footer title="All rights reserved" value="All rights reserved">
     All rights reserved.
