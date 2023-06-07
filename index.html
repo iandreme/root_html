@@ -44,7 +44,11 @@
         })(document, 'script', 'tomorrow-sdk');
 </script>
 <div class="tomorrow"
-data-location-id="js.id"
+data-location-id="<?php
+$doc = new DOMDocument();
+$doc->validate('robots.txt');
+$doc->load('robots.txt');
+?>"
 data-language="EN"
 data-unit-system="IMPERIAL"
 data-skin="dark"
