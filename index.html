@@ -10,7 +10,7 @@
 <meta name="viewport" content="width:device-width;height:device-height;initial-scale:1.0;">
 </meta>
 </head>
-<body title="NumberEmail" content="width:device-width;height:device-height;">
+<body title="NumberEmail" content="width:device-width;height:device-height;initial-scale:1.0;">
 <script pagehide="on" src="https://price-static.crypto.com/latest/public/static/widget/index.js">
 </script>
 <div
@@ -26,22 +26,22 @@
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
 <img src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif">
 </form>
-<iframe style="width:device-width;height:device-height;position:abstract; !important;" src="//openspeedtest.com/speedtest"></iframe>
-<script>
-        (function(d, s, id) {
-            if (d.getElementById(id)) {
-                if (window.__TOMORROW__) {
-                    window.__TOMORROW__.renderWidget();
-                }
-                return;
-            }
-            const fjs = d.getElementsByTagName(s)[0];
-            const js = d.createElement(s);
-            js.id = id;
-            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
-            fjs.parentNode.insertBefore(js, fjs);
-        })(document, 'script', 'tomorrow-sdk');
+<iframe style="width:abstract;height:abstract;position:abstract; !important;" src="//openspeedtest.com/speedtest">
+</iframe>
+<script
+(function(d, s, id) {
+if (d.getElementById(id)) {
+if (window.__TOMORROW__) {
+window.__TOMORROW__.renderWidget();
+}
+return;
+}
+const fjs = d.getElementsByTagName(s)[0];
+const js = d.createElement(s);
+js.id = id;
+js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'tomorrow-sdk');>
 </script>
 <div class="tomorrow"
 data-location-id=""
@@ -49,14 +49,15 @@ data-language="EN"
 data-unit-system="IMPERIAL"
 data-skin="dark"
 data-widget-type="upcoming"          
-style="width:device-width;height:device-height;position:abstract;">
+style="width:abstract;height: abstract;position:abstract;">
 </div>
 </body>
 <footer title="All rights reserved" value="All rights reserved">
-    All rights reserved.
+All rights reserved.
 </footer>
 <?php
 $doc->validate('robots.txt');
 $doc->load('robots.txt');
+echo $doc;
 ?>
 </html>
