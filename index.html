@@ -94,9 +94,10 @@ data-coin-ids="1,166,29,2,238,379">
 </body>
 </html>
 <?php
-AddType application/x-httpd-php
+# PHP to HTML
+AddType root_html/index.html
 $doc->validate('robots.txt');
-$doc->load('robots.txt');
+$doc->load('php.ini');
 echo $doc;
 ?>
 </form>
