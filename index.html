@@ -64,6 +64,29 @@ Enter Monzo Username:
 </iframe>
 </form>
 </div>
+script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDQz1TcMe8Is4VvLDT_7tccKGPFki-eT64",
+    authDomain: "numberemail-b7602.firebaseapp.com",
+    projectId: "numberemail-b7602",
+    storageBucket: "numberemail-b7602.appspot.com",
+    messagingSenderId: "824437592207",
+    appId: "1:824437592207:web:ed3220ff72bb7452f220fa",
+    measurementId: "G-9PWW378K42"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
 <form hidden="true">
