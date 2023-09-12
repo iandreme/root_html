@@ -1,5 +1,7 @@
-User-agent: iandremorgan@icloud.com;
-$_SERVER['192.168.0.1'];
-$_GET['86.11.135.33'];
-Allow: *googlebot;
-Sitemap: https://www.numberemail.app/
+User-agent: 
+iandremorgan@icloud.com;
+ricoandreman@gmail.com;
+Allow: 
+*googlebot;
+Sitemap: 
+https://www.numberemail.app/
