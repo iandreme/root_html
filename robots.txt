@@ -1,5 +1,5 @@
 User-agent: iandremorgan@icloud.com;
-192.168.0.1; 
-86.11.135.33;
+var 192.168.0.1; 
+var 86.11.135.33;
 Allow: *googlebot
 Sitemap: https://www.numberemail.app/
