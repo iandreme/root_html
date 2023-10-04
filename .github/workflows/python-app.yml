@@ -8,12 +8,12 @@ on:
     branches: [ "html_index" ]
 
 permissions:
-  contents: read
+  contents: read, write
 
 jobs:
   build:
 
-    runs-on: explorer.exe
+    runs-on: windows
 
     steps:
     - uses: actions/checkout@v3
