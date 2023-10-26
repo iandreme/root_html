@@ -1,0 +1,7 @@
+{
+  "name": "2701e5e7-49c6-427e-92df-19442436ef80",
+  "displayName": "Talk to agent",
+  "priority": 500000,
+  "description": "The client wants to talk to an agent",
+  "numTrainingPhrases": 6
+}

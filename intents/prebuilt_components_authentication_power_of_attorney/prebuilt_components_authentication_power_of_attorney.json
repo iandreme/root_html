@@ -1,0 +1,10 @@
+{
+  "name": "5d4ea49d-19a0-4d4a-aeaa-532974b35854",
+  "displayName": "prebuilt_components_authentication_power_of_attorney",
+  "parameters": [ {
+    "id": "prebuilt_components_authentication_non_user",
+    "entityType": "@prebuilt_components_authentication_non_user"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 31
+}

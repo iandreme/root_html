@@ -1,0 +1,11 @@
+{
+  "name": "af70681b-6d36-43bf-a34d-0549ec54d426",
+  "displayName": "prebuilt_components_authentication_collect_code",
+  "parameters": [ {
+    "id": "collect_code",
+    "entityType": "@sys.number-sequence",
+    "isList": true
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 34
+}

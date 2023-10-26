@@ -1,0 +1,72 @@
+{
+  "name": "717cbdd5-5f0a-4616-afdc-5b2d6bcc074a",
+  "displayName": "\u003e invoke validate account API",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "prebuilt_components_account_balance:validate_account",
+    "tag": "getAccountBalance"
+  },
+  "transitionRoutes": [ {
+    "condition": "$flow.account_found = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "\u003e fetch account balance API",
+    "name": "d513efec-f0e7-4089-9277-25e702a9dad0"
+  }, {
+    "condition": "($flow.account_found != true OR $flow.account_found = null OR $flow.account_found = \"\") AND $flow.retry_acc_number \u003c $flow.max_retry_acc_number",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "last_four_digit_of_account_number",
+        "value": null
+      }, {
+        "parameter": "$flow.retry_acc_number",
+        "value": "$sys.func.ADD($flow.retry_acc_number,1)"
+      } ]
+    },
+    "targetPage": "\u003e confirm user account retry",
+    "name": "7ad417f8-ca9e-4cd9-b62d-f76b03a8ed90"
+  }, {
+    "condition": "$flow.retry_acc_number = $flow.max_retry_acc_number",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "end failure",
+    "name": "c1e3b918-cc28-4590-a5d1-9b0e501c5df0"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "END_FLOW_WITH_FAILURE",
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We apologize for the inconvenience. Our system is currently experiencing technical issues. Our technical team is actively working to resolve this issue. Please try again after sometime." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "webhook_error"
+      } ]
+    },
+    "name": "b81d507f-3c4a-4407-a2a5-be5f6ae685f8"
+  }, {
+    "targetPage": "END_FLOW_WITH_FAILURE",
+    "event": "webhook.error.not-found",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We apologize for the inconvenience. Our system is currently experiencing technical issues. Our technical team is actively working to resolve this issue. Please try again after sometime." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "webhook_not_found"
+      } ]
+    },
+    "name": "80f5bed0-7139-4188-b6e1-917eb2a67879"
+  } ]
+}

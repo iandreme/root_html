@@ -1,0 +1,16 @@
+{
+  "name": "75bec0f1-f566-4110-a550-a15e4c9cec12",
+  "displayName": "prebuilt_components_dob_collection_collect_month",
+  "parameters": [ {
+    "id": "month",
+    "entityType": "@prebuilt_components_dob_collection_dob_month"
+  }, {
+    "id": "prebuilt_components_dob_collection_wrong_part",
+    "entityType": "@prebuilt_components_dob_collection_wrong_part"
+  }, {
+    "id": "prebuilt_components_dob_collection_dob_composite",
+    "entityType": "@prebuilt_components_dob_collection_dob_composite"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 26
+}

@@ -1,0 +1,17 @@
+{
+  "name": "48655d38-ee03-40dc-8c8a-0e799d265896",
+  "displayName": "prebuilt_components_account_balance:get_account_balance",
+  "genericWebService": {
+    "uri": "https://www.example.com",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"masked_account_number\": \"$session.params.last_four_digit_of_account_number\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"getAccountBalance_123\"\n  }\n}",
+    "parameterMapping": [ {
+      "key": "$flow.balance",
+      "value": "balance"
+    } ]
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

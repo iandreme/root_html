@@ -1,0 +1,26 @@
+{
+  "name": "4a2195ff-845c-4a46-9382-71e35ce5ff7e",
+  "displayName": "end success",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003eYour balance associated with the account number ending with \u003csay-as interpret-as=\"verbatim\"\u003e$session.params.last_four_digit_of_account_number\u003c/say-as\u003e is \u003csay-as interpret-as='currency' language='en-US'\u003e$$flow.balance\u003c/say-as\u003e.\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "origin",
+        "value": null
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "042a810b-84ac-4420-8fa4-bcc61996ae7e"
+  } ]
+}

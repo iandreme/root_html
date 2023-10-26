@@ -1,0 +1,10 @@
+{
+  "name": "360bde4e-5b35-46d5-8700-01525192c082",
+  "displayName": "prebuilt_components_waiting_room",
+  "parameters": [ {
+    "id": "duration",
+    "entityType": "@sys.duration"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 44
+}

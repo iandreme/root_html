@@ -1,0 +1,34 @@
+{
+  "name": "5643751d-499a-4781-9cde-a67c7f6a3919",
+  "displayName": "check ANI route",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.account_count = null OR $session.params.account_count = \"\" OR $session.params.account_count \u003c 1",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "auth_level",
+        "value": null
+      }, {
+        "parameter": "$flow.otp_retry_count",
+        "value": 0
+      } ]
+    },
+    "targetPage": "verify unidentified user auth level",
+    "name": "f4c9f9e1-d824-4852-a83a-9db79fdd70bf"
+  }, {
+    "condition": "$session.params.account_count \u003e= 1",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "auth_level",
+        "value": 0
+      } ]
+    },
+    "targetPage": "check auth level required",
+    "name": "721cfb2e-f656-40a5-8a6f-4048432bfa1a"
+  } ]
+}

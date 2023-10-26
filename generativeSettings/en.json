@@ -1,0 +1,14 @@
+{
+  "fallbackSettings": {
+    "selectedPrompt": "Default"
+  },
+  "languageCode": "en",
+  "knowledgeConnectorSettings": {
+    "business": "Rico",
+    "agent": "NumberEmail",
+    "agentIdentity": "Assistant ",
+    "llmModelSettings": {
+      "model": "text-bison"
+    }
+  }
+}

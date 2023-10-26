@@ -1,0 +1,23 @@
+{
+  "name": "63629af8-6b7a-415f-9933-40ca02fa24ab",
+  "displayName": "prebuilt_components_authentication:security_answers",
+  "genericWebService": {
+    "uri": "https://www.example.com",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"securityAns\"\n  }\n}",
+    "parameterMapping": [ {
+      "key": "$flow.last_payment_mode",
+      "value": "last_mop"
+    }, {
+      "key": "$flow.security_card_number",
+      "value": "card"
+    }, {
+      "key": "$flow.security_last_trans_amount",
+      "value": "last_trans_amount"
+    } ]
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

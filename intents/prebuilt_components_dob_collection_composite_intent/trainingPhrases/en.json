@@ -1,0 +1,302 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I celebrate on "
+    }, {
+      "text": "june 21 2022",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "its ",
+      "auto": true
+    }, {
+      "text": "aug 23 1997",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "birthday falls on ",
+      "auto": true
+    }, {
+      "text": "23 aug 1997",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my birth ",
+      "auto": true
+    }, {
+      "text": "date",
+      "parameterId": "prebuilt_components_dob_collection_wrong_part",
+      "auto": true
+    }, {
+      "text": " is ",
+      "auto": true
+    }, {
+      "text": "aug 23 1997",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my ",
+      "auto": true
+    }, {
+      "text": "date",
+      "parameterId": "prebuilt_components_dob_collection_wrong_part",
+      "auto": true
+    }, {
+      "text": " is ",
+      "auto": true
+    }, {
+      "text": "aug 3 of 1997",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my birth ",
+      "auto": true
+    }, {
+      "text": "date",
+      "parameterId": "prebuilt_components_dob_collection_wrong_part",
+      "auto": true
+    }, {
+      "text": " is ",
+      "auto": true
+    }, {
+      "text": "aug 3 of 1995",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "july 5th 1999",
+      "parameterId": "dob",
+      "auto": true
+    }, {
+      "text": " marks the ",
+      "auto": true
+    }, {
+      "text": "day",
+      "auto": true
+    }, {
+      "text": " I was born",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my birthday falls on ",
+      "auto": true
+    }, {
+      "text": "june 3rd 1998",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I celebrate my birthday on "
+    }, {
+      "text": "4th may 2001",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my birth ",
+      "auto": true
+    }, {
+      "text": "date",
+      "auto": true
+    }, {
+      "text": " is ",
+      "auto": true
+    }, {
+      "text": "october 4 of 1987",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I think it is ",
+      "auto": true
+    }, {
+      "text": "july 14th 1981",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "june of last year",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my dob is ",
+      "auto": true
+    }, {
+      "text": "august 13 1978",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "born ",
+      "auto": true
+    }, {
+      "text": "last month",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was born "
+    }, {
+      "text": "last year",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "today",
+      "parameterId": "dob",
+      "auto": true
+    }, {
+      "text": " is my birthday",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "It's "
+    }, {
+      "text": "today",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "today",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "november 5",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "13th june",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "current month",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "last year",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my ",
+      "auto": true
+    }, {
+      "text": "date",
+      "auto": true
+    }, {
+      "text": " of birth is ",
+      "auto": true
+    }, {
+      "text": "september 7th 1993",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my dob is ",
+      "auto": true
+    }, {
+      "text": "1 june 1987",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "august 13 1998",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was born on "
+    }, {
+      "text": "13th august 1998",
+      "parameterId": "dob",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

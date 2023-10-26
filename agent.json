@@ -1,0 +1,38 @@
+{
+  "defaultLanguageCode": "en",
+  "timeZone": "Europe/London",
+  "projectNumber": 824437592207,
+  "speechToTextSettings": {
+    "enableSpeechAdaptation": true
+  },
+  "startFlow": "Default Start Flow",
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+    
+    }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "textToSpeechSettings": {
+  
+  },
+  "genAppBuilderSettings": {
+    "engine": "projects/824437592207/locations/global/collections/default_collection/engines/numberemail_1698249452891"
+  },
+  "duplexSettings": {
+  
+  }
+}

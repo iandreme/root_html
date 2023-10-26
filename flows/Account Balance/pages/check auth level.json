@@ -1,0 +1,43 @@
+{
+  "name": "0f2eae31-c471-498a-8142-e8724da0503c",
+  "displayName": "check auth level",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "auth_level_req",
+      "value": 1
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.auth_level = null OR $session.params.auth_level \u003c $session.params.auth_level_req",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Authentication",
+    "name": "902144e6-a12f-4499-a305-3f4b60168466"
+  }, {
+    "condition": "$session.params.auth_level \u003e= $session.params.auth_level_req",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "check account count",
+    "name": "6f684ad5-1776-4e3a-a371-cbb908c5239d"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "end failure",
+    "event": "flow.failed",
+    "triggerFulfillment": {
+    
+    },
+    "name": "7364fb96-4f93-42b0-a23b-687ec2c94776"
+  }, {
+    "targetPage": "end escalation",
+    "event": "flow.failed.human-escalation",
+    "triggerFulfillment": {
+    
+    },
+    "name": "bd039c14-ad80-4e9b-b87d-e1c6e5ce3b8b"
+  } ]
+}

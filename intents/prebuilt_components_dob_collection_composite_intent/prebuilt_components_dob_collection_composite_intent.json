@@ -1,0 +1,13 @@
+{
+  "name": "2f12c03a-e6a1-48ee-9b6d-f3087e38c79e",
+  "displayName": "prebuilt_components_dob_collection_composite_intent",
+  "parameters": [ {
+    "id": "dob",
+    "entityType": "@prebuilt_components_dob_collection_dob_composite"
+  }, {
+    "id": "prebuilt_components_dob_collection_wrong_part",
+    "entityType": "@prebuilt_components_dob_collection_wrong_part"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 26
+}

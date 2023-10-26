@@ -1,3 +1,0 @@
-User-agent: iandremorgan@icloud.com; ricoandreman@gmail.com;
-Allow: *googlebot
-Sitemap: https://www.numberemail.app/

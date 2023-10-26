@@ -1,0 +1,290 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "20",
+      "parameterId": "number-sequence",
+      "auto": true
+    }, {
+      "text": " is the ",
+      "auto": true
+    }, {
+      "text": "day",
+      "parameterId": "prebuilt_components_dob_collection_wrong_part",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "born ",
+      "auto": true
+    }, {
+      "text": "day",
+      "parameterId": "prebuilt_components_dob_collection_wrong_part",
+      "auto": true
+    }, {
+      "text": " is ",
+      "auto": true
+    }, {
+      "text": "23",
+      "parameterId": "number-sequence",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "23",
+      "parameterId": "number-sequence",
+      "auto": true
+    }, {
+      "text": " is the ",
+      "auto": true
+    }, {
+      "text": "day",
+      "parameterId": "prebuilt_components_dob_collection_wrong_part",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "take it as ",
+      "auto": true
+    }, {
+      "text": "23",
+      "parameterId": "number-sequence",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was born on the "
+    }, {
+      "text": "9th",
+      "parameterId": "day"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I celebrate my birthday on the "
+    }, {
+      "text": "29th",
+      "parameterId": "day"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I remember it is "
+    }, {
+      "text": "20th",
+      "parameterId": "day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was brought into this world on "
+    }, {
+      "text": "13th",
+      "parameterId": "day",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my birth ",
+      "auto": true
+    }, {
+      "text": "day",
+      "auto": true
+    }, {
+      "text": " falls on ",
+      "auto": true
+    }, {
+      "text": "29",
+      "parameterId": "day",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "came into existence on ",
+      "auto": true
+    }, {
+      "text": "27th",
+      "parameterId": "day",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "9",
+      "parameterId": "day",
+      "auto": true
+    }, {
+      "text": " is the ",
+      "auto": true
+    }, {
+      "text": "day",
+      "auto": true
+    }, {
+      "text": " of my birth",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "11",
+      "parameterId": "day"
+    }, {
+      "text": " this is the day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "18",
+      "parameterId": "day"
+    }, {
+      "text": " is the day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "take it as ",
+      "auto": true
+    }, {
+      "text": "15",
+      "parameterId": "day",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "It was "
+    }, {
+      "text": "23rd",
+      "parameterId": "day",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "It should be "
+    }, {
+      "text": "13",
+      "parameterId": "day",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "23",
+      "parameterId": "day"
+    }, {
+      "text": " is the day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "It is "
+    }, {
+      "text": "16",
+      "parameterId": "day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "16th",
+      "parameterId": "day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I think it was "
+    }, {
+      "text": "5th",
+      "parameterId": "day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "day of birth is ",
+      "auto": true
+    }, {
+      "text": "14th",
+      "parameterId": "day",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was birth in "
+    }, {
+      "text": "23rd",
+      "parameterId": "day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was born on "
+    }, {
+      "text": "29th",
+      "parameterId": "day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the day is ",
+      "auto": true
+    }, {
+      "text": "13th",
+      "parameterId": "day",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "23",
+      "parameterId": "day"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "born on "
+    }, {
+      "text": "22nd",
+      "parameterId": "day",
+      "auto": true
+    }, {
+      "text": " "
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

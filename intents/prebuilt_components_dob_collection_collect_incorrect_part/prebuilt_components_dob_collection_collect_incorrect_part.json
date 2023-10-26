@@ -1,0 +1,11 @@
+{
+  "name": "72db5ee0-613a-4586-b97f-5c9a61f36d8e",
+  "displayName": "prebuilt_components_dob_collection_collect_incorrect_part",
+  "parameters": [ {
+    "id": "incorrect_part",
+    "entityType": "@prebuilt_components_dob_collection_wrong_part",
+    "isList": true
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 26
+}

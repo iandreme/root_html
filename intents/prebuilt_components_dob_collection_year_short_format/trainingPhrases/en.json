@@ -1,0 +1,297 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I think the born "
+    }, {
+      "text": "year",
+      "parameterId": "prebuilt_components_dob_collection_wrong_part",
+      "auto": true
+    }, {
+      "text": " is "
+    }, {
+      "text": "1995",
+      "parameterId": "phone-number",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "born ",
+      "auto": true
+    }, {
+      "text": "year",
+      "parameterId": "prebuilt_components_dob_collection_wrong_part",
+      "auto": true
+    }, {
+      "text": " is ",
+      "auto": true
+    }, {
+      "text": "2021",
+      "parameterId": "number-sequence",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I think it is "
+    }, {
+      "text": "2022",
+      "parameterId": "phone-number",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "It was "
+    }, {
+      "text": "1995",
+      "parameterId": "phone-number",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was born in "
+    }, {
+      "text": "1997",
+      "parameterId": "phone-number",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was born in the year "
+    }, {
+      "text": "2011",
+      "parameterId": "year"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I think it was "
+    }, {
+      "text": "2012",
+      "parameterId": "year",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the ",
+      "auto": true
+    }, {
+      "text": "year",
+      "auto": true
+    }, {
+      "text": " i was born is ",
+      "auto": true
+    }, {
+      "text": "2011",
+      "parameterId": "year",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my ",
+      "auto": true
+    }, {
+      "text": "year",
+      "auto": true
+    }, {
+      "text": " of birth is ",
+      "auto": true
+    }, {
+      "text": "2005",
+      "parameterId": "year",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I entered this world in "
+    }, {
+      "text": "18",
+      "parameterId": "year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was brought into existence is "
+    }, {
+      "text": "2003",
+      "parameterId": "year",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "2015",
+      "parameterId": "year",
+      "auto": true
+    }, {
+      "text": " is my birth ",
+      "auto": true
+    }, {
+      "text": "year",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "2014",
+      "parameterId": "year"
+    }, {
+      "text": " this is the year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "you can take it as ",
+      "auto": true
+    }, {
+      "text": "2013",
+      "parameterId": "year",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "2013",
+      "parameterId": "year",
+      "auto": true
+    }, {
+      "text": " is the ",
+      "auto": true
+    }, {
+      "text": "year",
+      "auto": true
+    }, {
+      "text": " I was born.",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I came into this world in "
+    }, {
+      "text": "29",
+      "parameterId": "year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "when i was born the year was "
+    }, {
+      "text": "1930",
+      "parameterId": "year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my birth ",
+      "auto": true
+    }, {
+      "text": "year",
+      "auto": true
+    }, {
+      "text": " is ",
+      "auto": true
+    }, {
+      "text": "28",
+      "parameterId": "year",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "It should be "
+    }, {
+      "text": "14",
+      "parameterId": "year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "2013",
+      "parameterId": "year"
+    }, {
+      "text": " was the year I was born in"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "It was "
+    }, {
+      "text": "18",
+      "parameterId": "year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "15",
+      "parameterId": "year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I was born in "
+    }, {
+      "text": "2012",
+      "parameterId": "year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the year is "
+    }, {
+      "text": "20",
+      "parameterId": "year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "born in ",
+      "auto": true
+    }, {
+      "text": "2014",
+      "parameterId": "year",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "13",
+      "parameterId": "year"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

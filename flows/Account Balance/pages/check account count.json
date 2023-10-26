@@ -1,0 +1,77 @@
+{
+  "name": "171d6a09-afd3-44c0-8efb-f1fc66865dc4",
+  "displayName": "check account count",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$flow.retry_acc_number = 0",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "Please wait while we are fetching your account details." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.account_count = null OR $session.params.account_count = \"\" OR $session.params.account_count \u003c 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We are unable to complete this action as there is no account associated with your phone number. We apologize for any inconvenience caused." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "3b2cd422-1b08-435b-8cfc-62961bb95c74"
+  }, {
+    "condition": "$session.params.account_count \u003e 1",
+    "triggerFulfillment": {
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$flow.retry_acc_number = 0",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "\u003cspeak\u003eWe have found that there are $session.params.account_count accounts associated with your number.\u003c/speak\u003e" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetFlow": "Account Number Collection",
+    "name": "438bac03-3cad-4dcf-a5d8-4081e1cbc5ee"
+  }, {
+    "condition": "$session.params.account_count \u003e= 1 AND $session.params.last_four_digit_of_account_number != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "\u003e invoke validate account API",
+    "name": "463f9604-d0dd-4a4e-b7d7-08a1eaf41e27"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "end failure",
+    "event": "flow.failed",
+    "triggerFulfillment": {
+    
+    },
+    "name": "efa134e3-7492-4af3-98bc-ee42622b14f9"
+  }, {
+    "targetPage": "end escalation",
+    "event": "flow.failed.human-escalation",
+    "triggerFulfillment": {
+    
+    },
+    "name": "0c7738f2-08dd-412c-8838-f0402aff9d86"
+  } ],
+  "description": "1. Below parameter preset at the Start Page\n$flow.retry_acc_number = 0\n2. Conditional response defined"
+}

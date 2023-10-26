@@ -1,0 +1,116 @@
+{
+  "name": "70ad48ce-e13e-4cbc-8f2c-a4572cca21e9",
+  "displayName": "\u003e confirm user account retry",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "The account number you provided is not found. If you want to try again, please say yes." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "prebuilt_components_confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "check account count",
+    "name": "e9bf62f4-1191-448f-9210-72947d01cb01"
+  }, {
+    "intent": "prebuilt_components_confirmation_no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "end failure",
+    "name": "622cb178-b4a2-4672-a8fc-c98be5855a5d"
+  }, {
+    "intent": "prebuilt_components_escalate_human_agent",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "agent"
+      } ]
+    },
+    "targetPage": "end escalation",
+    "name": "e5c58813-336a-4f41-904a-a473942f4019"
+  }, {
+    "intent": "prebuilt_components_denial_of_information",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "denial_of_information"
+      } ]
+    },
+    "targetPage": "end failure",
+    "name": "06091930-ce11-4d1a-ab0a-81fef76b049e"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, we were not able to hear you. If you want to retry please say yes." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b3205d91-d13c-430d-8688-d5c95c493503"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hmm, we still cannot hear you. If you want to retry please say yes." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "aa83d046-9dc5-4ebd-8275-520123e813bf"
+  }, {
+    "targetPage": "end failure",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "max_no_input"
+      } ]
+    },
+    "name": "83548945-6a83-4f12-8ee5-7db1e42b8630"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry we didn’t get that. If you want to try again please say yes." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6a6b02f1-972a-4f10-b699-4bbda26d4331"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, we're still not getting that. If you want to try again please say yes." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6bcb2cb6-20dc-4e04-8075-597da376ca03"
+  }, {
+    "targetPage": "end failure",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "max_no_match"
+      } ]
+    },
+    "name": "7a1bf6b6-640c-4e76-9af5-29feea800d71"
+  } ],
+  "description": "Conditional Response defined"
+}

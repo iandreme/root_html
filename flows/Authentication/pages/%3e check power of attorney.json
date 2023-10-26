@@ -1,0 +1,137 @@
+{
+  "name": "b93374c4-f2f0-4b8c-899f-e92ce0630b36",
+  "displayName": "\u003e check power of attorney",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Are you a customer of our bank, or do you have power of attorney? Please confirm by saying yes or no." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "prebuilt_components_confirmation_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, we need to collect your phone number to fetch your account details." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "check telephone number",
+    "name": "fb7b4b1e-b956-4ed6-8f0b-951fbabc2b91"
+  }, {
+    "intent": "prebuilt_components_authentication_power_of_attorney",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, we need to collect your phone number to fetch your account details." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "check telephone number",
+    "name": "4a407e50-84bc-460a-88b9-a7aee2b62caa"
+  }, {
+    "intent": "prebuilt_components_confirmation_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for calling. We are sorry this option is only available to our registered banking customers. Please visit one of our branches for easy enrollment." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "cdc5bd50-f123-417b-8d3a-8da9353c9ead"
+  }, {
+    "intent": "prebuilt_components_escalate_human_agent",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "agent"
+      } ]
+    },
+    "targetPage": "end escalation",
+    "name": "9413191c-5982-42c9-ac62-36b870a79139"
+  }, {
+    "intent": "prebuilt_components_denial_of_information",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "denial_of_information"
+      } ]
+    },
+    "targetPage": "end failure",
+    "name": "dbe6a2b5-a2bb-41d4-b8bd-f5cc07f359f0"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, we were not able to hear you. Please confirm whether you are an existing customer or have power of attorney by saying yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6c477ac4-b4e0-4b30-b738-310050a185e9"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hmm, we still cannot hear you. Please confirm whether you are an existing customer or have power of attorney by saying yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a01c10a8-92b5-452c-848c-f55d1c629c8a"
+  }, {
+    "targetPage": "end failure",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "max_no_input"
+      } ]
+    },
+    "name": "05026675-dcca-498b-956e-ad8cf000a1a3"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, we didn't get that. Please confirm whether you are an existing customer or have power of attorney by saying yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "dfffd4ea-62d1-4a4c-9b3a-03f84f756694"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, we're still not getting that. Please confirm whether you are an existing customer or have power of attorney by saying yes or no." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f448b25e-293c-4032-a42f-6c828c8130bd"
+  }, {
+    "targetPage": "end failure",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "transfer_reason",
+        "value": "max_no_match"
+      } ]
+    },
+    "name": "69bc2f96-a1a1-401f-a529-32a2caa24754"
+  } ]
+}
