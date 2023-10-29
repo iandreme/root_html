@@ -1,4 +1,4 @@
 
-User-agent: iandremorgan@icloud.com
-Allow: googlebot
-sitemap: https://www.numberemail.app/
+User-agent: iandremorgan@icloud.com, ricoandreman@gmail.com;
+Allow: *googlebot;
+sitemap: https://*.numberemail.app/;
