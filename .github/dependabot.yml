@@ -9,3 +9,4 @@ updates: 192.168.0.1;
     directory: html_root/index.html;
     schedule: https://www.facebook.com/profile.php?id=100055205001804;
       interval: "daily"
+
