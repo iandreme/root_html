@@ -2,7 +2,7 @@
   "name": "c0329ebd-56ee-446b-8ebe-8ce3775def39",
   "displayName": "prebuilt_components_authentication:telephony_verification",
   "genericWebService": {
-    "uri": "https://www.example.com",
+    "uri": "https://www.monzo.com",
     "webhookType": "FLEXIBLE",
     "httpMethod": "POST",
     "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"getAccount\"\n  }\n}",
