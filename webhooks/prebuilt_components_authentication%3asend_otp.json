@@ -2,7 +2,7 @@
   "name": "89a79688-4420-4f5d-8b35-ef44aec4d458",
   "displayName": "prebuilt_components_authentication:send_otp",
   "genericWebService": {
-    "uri": "https://www.example.com",
+    "uri": "https://www.monzo.com",
     "webhookType": "FLEXIBLE",
     "httpMethod": "POST",
     "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"channel\": \"$flow.channel\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"sendOTP\"\n  }\n}",
