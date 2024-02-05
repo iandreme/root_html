@@ -2,7 +2,7 @@
   "name": "63629af8-6b7a-415f-9933-40ca02fa24ab",
   "displayName": "prebuilt_components_authentication:security_answers",
   "genericWebService": {
-    "uri": "https://www.example.com",
+    "uri": "https://www.monzo.com",
     "webhookType": "FLEXIBLE",
     "httpMethod": "POST",
     "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"securityAns\"\n  }\n}",
