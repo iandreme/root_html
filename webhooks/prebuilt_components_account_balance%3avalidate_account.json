@@ -2,7 +2,7 @@
   "name": "71541ca6-a67d-4e51-83c4-f061bb36dfed",
   "displayName": "prebuilt_components_account_balance:validate_account",
   "genericWebService": {
-    "uri": "https://www.example.com",
+    "uri": "https://www.monzo.com",
     "webhookType": "FLEXIBLE",
     "httpMethod": "POST",
     "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"masked_account_number\": \"$session.params.last_four_digit_of_account_number\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"validateAccount\"\n  }\n}",
