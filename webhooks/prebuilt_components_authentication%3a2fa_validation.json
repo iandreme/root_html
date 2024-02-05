@@ -2,7 +2,7 @@
   "name": "5d291923-2171-49d9-a21c-61de9e5c865d",
   "displayName": "prebuilt_components_authentication:2fa_validation",
   "genericWebService": {
-    "uri": "https://www.example.com",
+    "uri": "https://www.monzo.com",
     "webhookType": "FLEXIBLE",
     "httpMethod": "POST",
     "requestBody": "{\n  \"phone_number\": \"$session.params.phone_number\",\n  \"security_key\": \"$flow.security_key\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"verifyKey\"\n  }\n}",
