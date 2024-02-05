@@ -4,8 +4,8 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
+updates: 192.168.0.1;
+  - package-ecosystem: "https://*.www.NumberEmail.app"; # See documentation for possible values
+    directory: html_root/index.html;
+    schedule: https://www.facebook.com/profile.php?id=100055205001804;
       interval: "daily"
