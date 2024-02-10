@@ -2,34 +2,61 @@
 <html lang="en">
 <head title="NumberEmail">
     <meta name="viewport" descr="NumberEmail" content="width=device-width, initial-scale=1.0"></meta>
+    <script>
+    var map, watchId, userPin;
+
+    function GetMap()
+    {
+        map = new Microsoft.Maps.Map('#myMap', {});
+    }
+
+    function startTracking() {
+        //Add a pushpin to show the user's location.
+        userPin = new Microsoft.Maps.Pushpin(map.getCenter(), { visible: false });
+        map.entities.push(userPin);
+
+        //Watch the users location.
+        watchId = navigator.geolocation.watchPosition(usersLocationUpdated);
+    }
+
+    function usersLocationUpdated(position) {
+        var loc = new Microsoft.Maps.Location(
+                    position.coords.latitude,
+                    position.coords.longitude);
+
+        //Update the user pushpin.
+        userPin.setLocation(loc);
+        userPin.setOptions({ visible: true });
+
+        //Center the map on the user's location.
+        map.setView({ center: loc });
+    }
+
+    function stopTracking() {
+        // Cancel the geolocation updates.
+        navigator.geolocation.clearWatch(watchId);
+
+        //Remove the user pushpin.
+        map.entities.clear();
+    }
+    </script>
 </head>
 <body>
 <form horizontal-alignment="abstract" vertical-alignment="abstract">
-<script>
-        (function(d, s, id) {
-            if (d.getElementById(id)) {
-                if (window.__TOMORROW__) {
-                    window.__TOMORROW__.renderWidget();
-                }
-                return;
-            }
-            const fjs = d.getElementsByTagName(s)[0];
-            const js = d.createElement(s);
-            js.id = id;
-            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+    <div id="myMap" style="position:relative;width:100%;min-width:290px;height:600px;background-color:gray"></div><br/>
+    <input type="button" value="Start Continuous Tracking" onclick="startTracking()" />
+    <input type="button" value="Stop Continuous Tracking" onclick="stopTracking()"/>
 
-            fjs.parentNode.insertBefore(js, fjs);
-        })(document, 'script', 'tomorrow-sdk');
-</script>
-        <div class="tomorrow"
-           data-location-id=""
-           data-language="EN"
-           data-unit-system="IMPERIAL"
-           data-skin="dark"
-           data-widget-type="upcoming"
-           style="padding-bottom:22px;position:relative;"
-        >
-        </div>
+    <script>
+        // Dynamic load the Bing Maps Key and Script
+        // Get your own Bing Maps key at https://www.microsoft.com/maps
+        (async () => {
+            let script = document.createElement("script");
+            let bingKey = await fetch("https://samples.azuremaps.com/api/GetBingMapsKey").then(r => r.text()).then(key => { return key });
+            script.setAttribute("src", `https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=${bingKey}`);
+            document.body.appendChild(script);
+        })();
+    </script>
 </form>
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
